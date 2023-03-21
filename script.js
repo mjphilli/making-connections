@@ -7,9 +7,9 @@ function editProfile() {
 function requests(e) {
     if (e.alt === "accept")
     {
-        document.querySelector("#connections").innerText = ++document.querySelector("#connections").innerText;
+        ++document.querySelector("#connections").innerText;
     }
 
-    document.querySelector("#requests").innerText = --document.querySelector("#requests").innerText;
+    --document.querySelector("#requests").innerText;
     e.parentNode.parentNode.remove();
 }
